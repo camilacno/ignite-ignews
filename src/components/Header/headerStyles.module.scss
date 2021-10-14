@@ -1,5 +1,5 @@
 .headerContainer {
-  border-bottom: 1px solid var(--gray-darken-1);
+  border-bottom: 1px solid var(--gray-850);
   height: 5rem;
 }
 
@@ -17,7 +17,7 @@
     margin-left: 5rem;
 
     a {
-      color: var(--gray-medium);
+      color: var(--gray-300);
       display: inline-block;
       height: 100%;
       line-height: 5rem;
@@ -36,11 +36,11 @@
 
       &.active {
         color: var(--white);
-        font-weight: 900;
+        font-weight: 500;
       }
 
       &.active::after {
-        background: var(--yellow);
+        background: var(--yellow-500);
         border-radius: 3px 3px 0 0;
         content: '';
         height: 3px;
@@ -51,5 +51,9 @@
         left: 0;
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }
