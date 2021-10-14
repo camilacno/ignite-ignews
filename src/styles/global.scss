@@ -20,13 +20,14 @@
   --cyan: #61dafb;
   --gray-light: #e1e1e6;
   --gray-medium: #a8a8b3;
-  --gray-dark: #121214;
+  --gray-darken-1: #29292e;
+  --gray-darken-2: #121214;
   --white: #ffffff;
   --yellow: #eba417;
 }
 
 body {
-  background: var(--gray-dark);
+  background: var(--gray-darken-2);
   color: var(--white);
 }
 

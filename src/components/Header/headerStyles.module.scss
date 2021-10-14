@@ -1,0 +1,55 @@
+.headerContainer {
+  border-bottom: 1px solid var(--gray-darken-1);
+  height: 5rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1128px;
+  padding: 0 2rem;
+
+  nav {
+    height: 100%;
+    margin-left: 5rem;
+
+    a {
+      color: var(--gray-medium);
+      display: inline-block;
+      height: 100%;
+      line-height: 5rem;
+      padding: 0 0.5rem;
+      position: relative;
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        color: var(--white);
+      }
+
+      transition: color 0.2s;
+
+      &.active {
+        color: var(--white);
+        font-weight: 900;
+      }
+
+      &.active::after {
+        background: var(--yellow);
+        border-radius: 3px 3px 0 0;
+        content: '';
+        height: 3px;
+        width: 100%;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
