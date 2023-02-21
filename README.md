@@ -25,6 +25,7 @@ Also applied the concepts:
 
  - <a href="#about-the-application">About the Application</a>
  - <a href="#main-libs">Main libs</a>
+ - <a href="features">Features</a>
  - <a href="#project-layouts">Project layouts</a>
  - <a href="#how-to-run">How to run</a>
   
@@ -34,6 +35,15 @@ Also applied the concepts:
  
 [ESLint](https://eslint.org/) | [Prettier](https://prettier.io/)
 	
+###### *Go to <a href="#content">Content</a>*.
+
+## Features
+
+- Payment setup with Stripe
+- Using a CMS to display articles
+- Using FaunaDB to save user subscription data
+- Authentication setup with Github
+  
 ###### *Go to <a href="#content">Content</a>*.
 
 ## Project Layouts
