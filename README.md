@@ -25,7 +25,7 @@ Also applied the concepts:
 
  - <a href="#about-the-application">About the Application</a>
  - <a href="#main-libs">Main libs</a>
- - <a href="features">Features</a>
+ - <a href="#features">Features</a>
  - <a href="#project-layouts">Project layouts</a>
  - <a href="#how-to-run">How to run</a>
   
