@@ -14,17 +14,18 @@ export function SignInButton() {
       onClick={() => signOut()}
     >
       <FaGithub color={'#38A980'} />
-      {session.user.name}
+      <p>{session.user.name}</p>
       <FiX className={styles.closeIcon} color="#737388" />
     </button>
   ) : (
     <button
       type="button"
+      title="Entrar com github"
       className={styles.signInButton}
       onClick={() => signIn('github')}
     >
       <FaGithub color={'#eba417'} />
-      Sign in with Github
+      <p>Entrar com Github</p>
     </button>
   )
 }

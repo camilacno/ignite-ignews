@@ -1,0 +1,90 @@
+.hamburgerMenu {
+  position: relative;
+
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    &::before,
+    &::after,
+    .hamburgerIcon {
+      background-color: #fff;
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &.isActive {
+      .hamburgerIcon {
+        &::before {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        &::after {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+
+        & {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .menu {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+
+    &.isOpen {
+      height: 200px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 10px;
+
+        a {
+          color: #333;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
