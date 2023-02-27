@@ -1,0 +1,26 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  width: 22rem;
+
+  input::placeholder {
+    color: gray;
+    font-size: 1rem;
+  }
+}
+
+.inputLabel {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.input {
+  padding: 0.8rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  background-color: #202024;
+  color: white;
+  border: 0;
+}

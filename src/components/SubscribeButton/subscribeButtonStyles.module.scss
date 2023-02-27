@@ -10,11 +10,17 @@
   font-size: 1.25rem;
   font-weight: bold;
   height: 4rem;
-  width: 260px;
+  width: 16rem;
 
   &:hover {
     filter: brightness(0.8);
   }
 
   transition: filter 0.2s;
+}
+
+.secondary {
+  background-color: #04d361;
+  height: 3rem;
+  margin-top: 1rem;
 }

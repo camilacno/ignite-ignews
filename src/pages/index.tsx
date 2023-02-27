@@ -32,7 +32,7 @@ export default function Home({ product }: HomeProps) {
             {/* <span>for {product.amount}/month</span> */}
             <span>for 49,90/month</span>
           </p>
-          <SubscribeButton />
+          <SubscribeButton title="Subscribe now" color="primary" />
         </section>
         <Image
           src="/images/avatar.svg"

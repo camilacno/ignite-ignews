@@ -6,6 +6,7 @@
 .headerContent {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   height: 100%;
   margin: 0 auto;
@@ -14,6 +15,12 @@
 
   @media (max-width: 360px) {
     padding: 0 1rem;
+  }
+
+  h1 {
+    @media screen and (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
 
   nav {
@@ -38,7 +45,7 @@
       display: inline-block;
       height: 100%;
       line-height: 5rem;
-      padding: 0 0.5rem;
+      padding: 0 2rem;
       position: relative;
 
       &:hover {
@@ -62,6 +69,23 @@
         position: absolute;
         bottom: 0;
         left: 0;
+      }
+    }
+  }
+
+  .menuComponent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 500px) {
+      padding: 1rem;
+      .a {
+        order: 2;
+      }
+      .b {
+        margin-left: 1rem;
       }
     }
   }
